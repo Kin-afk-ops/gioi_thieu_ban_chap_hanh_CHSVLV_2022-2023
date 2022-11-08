@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+.app {
+  min-width: 100vw;
+  background-image: url("../images/backgroundbasic.jpg");
+}
+
+.title {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.title-text {
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.title-logo-img {
+  width: 100px;
+  height: 100px;
+}
+
+/* content */
+
+.content {
+  margin: 20px -10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.member {
+  display: flex;
+  border-radius: 20px;
+  align-items: center;
+  width: 356px;
+  padding: 0 10px;
+}
+
+.member:hover {
+  padding: 20px;
+  width: 600px;
+}
+
+.member:hover .member-img {
+  border-radius: 20px;
+  width: 300px;
+  height: 440px;
+  transition: 1.5s ease-out;
+}
+
+.bia-phai:hover {
+  transform: translateX(-50%);
+  transition: 1.5s;
+}
+
+.bia-trai:hover {
+  transform: translateX(50%);
+  transition: 1.5s;
+}
+
+.bia-duoi:hover {
+  transform: translateY(-50%);
+  transition: 1.5s;
+}
+
+.member:hover .member-info {
+  z-index: 1;
+  transform: translateX(330px) translateY(-168px);
+  transition: 1.5s;
+}
+
+.member-img {
+  border-radius: 50%;
+  height: 175px;
+  width: 175px;
+  object-fit: cover;
+}
+
+.member-info {
+  border-radius: 20px;
+  padding: 20px;
+  position: fixed;
+  z-index: -1;
+  background-color: #00ffff;
+  line-height: 1.5;
+  font-size: 20px;
+  font-weight: 500;
+  transform: translateX(0) translateY(-70px);
+}
+
+.member-info::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 30px;
+  border-width: 10px 13px;
+  border-style: solid;
+  border-color: #00ffff transparent transparent #00ffff;
+}
+
+.loi:hover {
+  width: 630px;
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/007/951/672/small/cityscape-on-white-background-building-perspective-modern-building-in-the-city-skyline-city-silhouette-city-skyscrapers-business-center-vector.jpg");
+}
+
+.khang:hover {
+  background-image: url("https://previews.123rf.com/images/yongyeezer/yongyeezer1905/yongyeezer190500020/123447363-abstract-circuit-board-electronic-texture-in-the-gradient-background.jpg");
+}
+
+.thinh:hover {
+  background-image: url("https://media.istockphoto.com/id/1389511522/vector/cogs-and-gear-wheel-mechanisms-concepts-and-ideas-for-hi-tech-digital-technology-and.jpg?s=612x612&w=0&k=20&c=Riplad5SKWFT6YwCR4RhAIk6Bqf0dKfna7-Uvx9qT_g=");
+}
+.linh:hover {
+  width: 630px;
+  background-image: url("https://png.pngtree.com/background/20210715/original/pngtree-digital-information-technology-binary-world-concept-computer-generated-background-design-picture-image_1267027.jpg");
+}
+
+.phuong:hover {
+  width: 750px;
+  background-image: url("https://img5.thuthuatphanmem.vn/uploads/2021/10/20/background-du-lich-bau-troi_110850711.jpg");
+}
